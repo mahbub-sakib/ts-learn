@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const UserInfoWithUseState = () => {
     const [user, setUser] = useState({ name: '', age: '0', hobbies: [] });
+    console.log(user);
     return (
         <form >
             <input onChange={(e) => setUser({ ...user, name: e.target.value })}
