@@ -5,6 +5,7 @@ import './App.css'
 
 import CounterWithClassComponent from './components/CounterWithClassComponent';
 import CounterWithFuncComponent from './components/CounterWithFuncComponent';
+import UserInfoWithUseState from './components/UserInfoWithUseState';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +16,8 @@ function App() {
 
       {count}
       {/* <CounterWithClassComponent count={count} setCount={setCount}></CounterWithClassComponent> */}
-      <CounterWithFuncComponent count={count} setCount={setCount}></CounterWithFuncComponent>
+      {/* <CounterWithFuncComponent count={count} setCount={setCount}></CounterWithFuncComponent> */}
+      <UserInfoWithUseState></UserInfoWithUseState>
     </div>
   );
 }
